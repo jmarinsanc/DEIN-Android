@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/boton_inferior"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom"
+        android:backgroundTint="#F65B2B"
+        android:gravity="bottom"
+        android:text="Botón Inferior"
+        android:textAlignment="viewStart"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/boton_superior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#45C6FA"
+        android:text="Botón Superior"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/boton_centro_derecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:backgroundTint="#DC1B52"
+        android:text="Botón Centro Derecha "
+        android:textSize="16sp" />
+</FrameLayout>
