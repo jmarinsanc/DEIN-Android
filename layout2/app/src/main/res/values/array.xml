@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="lista_estado_civil">
+        <item>Solter@</item>
+        <item>Casad@</item>
+        <item>Viud@</item>
+        <item>Divorciad@</item>
+    </array>
+    <array name="lista_cargo">
+        <item>Técnic@</item>
+        <item>Administrativ@</item>
+        <item>Ingenier@</item>
+    </array>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/input_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/input_apellido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_nombre"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:hint="Apellidos"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/texto_estado_civil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_apellido"
+        android:layout_marginRight="48dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="16dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:text="Estado civil" />
+
+    <Spinner
+        android:id="@+id/spinner_estado_civil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texto_estado_civil"
+        android:layout_toLeftOf="@+id/spinner_cargo"
+        android:entries="@array/lista_estado_civil"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/texto_cargo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_apellido"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/texto_estado_civil"
+        android:paddingBottom="8dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:paddingTop="16dp"
+        android:text="Cargo" />
+
+    <Spinner
+        android:id="@+id/spinner_cargo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/texto_cargo"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/texto_cargo"
+        android:layout_below="@+id/texto_cargo"
+        android:entries="@array/lista_cargo"
+        />
+</RelativeLayout>
