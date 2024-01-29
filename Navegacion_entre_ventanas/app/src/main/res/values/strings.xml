@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Navegacion_entre_ventanas</string>
+    <string name="nombre">Escribe tu nombre</string>
+    <string name="aceptar">Botón Aceptar</string>
+    <string name="alumno">App creada por Juan Pablo</string>
+    <string name="modulo">DEIN</string>
+</resources>
