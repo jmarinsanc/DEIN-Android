@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">menus</string>
+    <string name="edit_action">editar</string>
+    <string name="delete_action">eliminar</string>
+    <string name="share_action">Compartir</string>
+    <string name="create_pdf_action">Crear pdf</string>
+    <string name="print_action">Imprimir</string>
+    <string name="send_action">Enviar</string>
+    <string name="mark_as_paid_action">Marcar como pagado</string>
+    <string name="search_action">Buscar</string>
+    <string name="Mostrar_consumo">Mostrar consumo</string>
+</resources>
