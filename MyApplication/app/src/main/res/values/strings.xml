@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">Claro &amp; Oscuro</string>
+    <string name="app_name" translatable="true">Claro &amp; Oscuro</string>
 
     <string name="field_mandatory">Este campo en obligatorio</string>
     <string name="field_email">Email</string>
