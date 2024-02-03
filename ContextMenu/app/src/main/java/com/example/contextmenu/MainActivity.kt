@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         val image: ImageView = findViewById(R.id. image)
         registerForContextMenu(image)
-        val moreButton: ImageView = findViewById(R.id. more_actions_button)
+        val moreButton: ImageView = findViewById(R.id. imageButton)
         moreButton.setOnClickListener { view ->
             showMoreActionsMenu(view)
         }

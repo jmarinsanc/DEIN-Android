@@ -2,11 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/add_favorites"
-        android:title="@string/add_favorites" />
+        android:title="@string/iniciar_sesi_n" />
     <item
         android:id="@+id/share"
-        android:title="@string/share" />
+        android:title="@string/cerrar_sesi_n" />
     <item
         android:id="@+id/move"
-        android:title="@string/move" />
+        android:title="@string/ajustes_de_usuario" />
 </menu>
