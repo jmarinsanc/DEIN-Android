@@ -2,6 +2,7 @@ package com.example.recycle_view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 
@@ -12,14 +13,20 @@ class MainActivity : AppCompatActivity() {
 
         val recycler: RecyclerView =
             findViewById(R.id. recycler)
-        recycler.adapter = ColorsAdapter(buildColors())
-    }
+        recycler.adapter = ColorsAdapter(buildColors(),
+            object : ColorClickListener {
+                override fun onColorClick (color: Color) {
+                    Toast.makeText( this@MainActivity , color.hex,
+                        Toast.LENGTH_LONG).show()
+                }
+            }
+        )    }
 
     private fun buildColors (): List<Color> {
         return listOf(
-            Color(getString(R.string. red), getColorHex(R.color. red),"https://loremflickr.com/320/240?lock=1" ),
-            Color(getString(R.string. indigo), getColorHex(R.color. indigo), "https://loremflickr.com/320/240?lock=2" ),
-            Color(getString(R.string. green), getColorHex(R.color. green),"https://loremflickr.com/320/240?lock=3" ),
+            Color(getString(R.string. red), getColorHex(R.color. red),"https://picsum.photos/200/300" ),
+            Color(getString(R.string. indigo), getColorHex(R.color. indigo), "https://picsum.photos/200/300" ),
+            Color(getString(R.string. green), getColorHex(R.color. green),"https://picsum.photos/200/300" ),
             Color(getString(R.string. orange), getColorHex(R.color. orange),"https://loremflickr.com/320/240?lock=4" ),
             Color(getString(R.string. blue), getColorHex(R.color. blue),"https://loremflickr.com/320/240?lock=5" ),
             Color(getString(R.string. yellow), getColorHex(R.color. yellow),"https://loremflickr.com/320/240?lock=6" ),
